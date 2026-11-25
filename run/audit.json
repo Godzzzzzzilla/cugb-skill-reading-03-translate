@@ -1,0 +1,78 @@
+{
+ "checks": [
+  {
+   "id": "source-found",
+   "ok": true,
+   "detail": "1 candidate source file(s)",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "segments-built",
+   "ok": true,
+   "detail": "7 segments",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "all-segments-translated",
+   "ok": true,
+   "detail": "7 translated of 7 source segments (need 6)",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "numbers-preserved",
+   "ok": true,
+   "detail": "3 in, 3 out",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "units-preserved",
+   "ok": true,
+   "detail": "0 in, 0 out",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "citations-preserved",
+   "ok": true,
+   "detail": "0 in, 0 out",
+   "weight": 0.8,
+   "critical": false
+  },
+  {
+   "id": "no-untranslated-segment",
+   "ok": true,
+   "detail": "0 sentence(s) contain no target-language characters",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "glossary-consistent",
+   "ok": true,
+   "detail": "10/10 terms used with the locked target",
+   "weight": 1.0,
+   "critical": false
+  },
+  {
+   "id": "glossary-applied",
+   "ok": true,
+   "detail": "10 of 10 terms occur in the source",
+   "weight": 0.6,
+   "critical": false
+  },
+  {
+   "id": "anchors-verified",
+   "ok": true,
+   "detail": "7/7 source segments re-slice",
+   "weight": 1.0,
+   "critical": true
+  }
+ ],
+ "passed": 10,
+ "total": 10,
+ "ratio": 1.0,
+ "failed_critical": []
+}

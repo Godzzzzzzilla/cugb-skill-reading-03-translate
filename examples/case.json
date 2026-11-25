@@ -1,0 +1,8 @@
+{
+ "case_id": "demo-translate-01",
+ "task": "Translate the abstract into Chinese with a locked glossary, then audit terminology consistency and preservation of numbers, units and citations.",
+ "materials": ["abstract_en.md", "translation_zh.md", "glossary.tsv"],
+ "source_lang": "en",
+ "target_lang": "zh",
+ "output_contract": {"fields": ["segments", "translation", "glossary", "consistency", "evidence"]}
+}

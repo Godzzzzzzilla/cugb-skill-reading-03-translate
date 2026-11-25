@@ -1,0 +1,647 @@
+{
+ "schema": "arm-skill-result/1.1",
+ "skill": {
+  "name": "reading-03-translate",
+  "version": "1.0.0",
+  "armkit": "1.1.0"
+ },
+ "case_id": "demo-translate-01",
+ "status": "success",
+ "status_reason": "every segment translated, no number/unit/citation lost, glossary consistent",
+ "result": {
+  "translation_source": "inputs/translation_zh.md",
+  "segments": [
+   {
+    "id": "s001",
+    "source": "# Abstract",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "heading"
+   },
+   {
+    "id": "s002",
+    "source": "Two-column typesetting is the default for most engineering journals, yet the text layer of a PDF stores glyphs in the order the producer wrote them.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   },
+   {
+    "id": "s003",
+    "source": "We study whether layout-aware reading-order reconstruction improves downstream use of scientific PDFs.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   },
+   {
+    "id": "s004",
+    "source": "A three-page benchmark with a known ground truth is rendered from a controlled layout engine, so that block order, header and footer positions, table cells and equation numbers are known exactly.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   },
+   {
+    "id": "s005",
+    "source": "A naive extractor recovers 71.4% of body characters in the correct position, while a column-aware extractor reaches 98.1%.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   },
+   {
+    "id": "s006",
+    "source": "The gain is largest on pages whose columns are separated by a narrow gutter of 20 pt.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   },
+   {
+    "id": "s007",
+    "source": "We conclude that reading order should be verified block by block rather than asserted, and we release the benchmark and the verifier.",
+    "translation": null,
+    "preservation": {},
+    "aligned": false,
+    "status": "missing"
+   }
+  ],
+  "translation": "\n\n\n\n\n\n\n\n\n\n\n\n",
+  "glossary": [
+   {
+    "term": "reading order",
+    "target": "阅读顺序",
+    "source_occurrences": 2,
+    "target_occurrences": 2,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "two-column",
+    "target": "双栏",
+    "source_occurrences": 1,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "gutter",
+    "target": "栏间距",
+    "source_occurrences": 1,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "block",
+    "target": "块",
+    "source_occurrences": 3,
+    "target_occurrences": 2,
+    "expected_at_least": 2,
+    "consistent": true
+   },
+   {
+    "term": "ground truth",
+    "target": "真值",
+    "source_occurrences": 1,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "extractor",
+    "target": "抽取器",
+    "source_occurrences": 2,
+    "target_occurrences": 2,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "benchmark",
+    "target": "基准",
+    "source_occurrences": 2,
+    "target_occurrences": 2,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "verifier",
+    "target": "核验器",
+    "source_occurrences": 1,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "layout",
+    "target": "版面",
+    "source_occurrences": 2,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   },
+   {
+    "term": "glyph",
+    "target": "字形",
+    "source_occurrences": 1,
+    "target_occurrences": 1,
+    "expected_at_least": 1,
+    "consistent": true
+   }
+  ],
+  "consistency": {
+   "terms": 10,
+   "consistent": 10,
+   "violations": []
+  },
+  "issues": [],
+  "mode": "supplied",
+  "segment_count": 7,
+  "translated_count": 0
+ },
+ "evidence": [
+  {
+   "id": "s001",
+   "claim": "segment s001: # Abstract",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 0,
+    "char_end": 10,
+    "quote": "# Abstract",
+    "block_id": "s001"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s002",
+   "claim": "segment s002: Two-column typesetting is the default for most engineering journals, yet the te…",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 12,
+    "char_end": 160,
+    "quote": "Two-column typesetting is the default for most engineering journals, yet the text layer of a PDF stores glyphs in the order the producer wrote them.",
+    "block_id": "s002"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s003",
+   "claim": "segment s003: We study whether layout-aware reading-order reconstruction improves downstream …",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 161,
+    "char_end": 263,
+    "quote": "We study whether layout-aware reading-order reconstruction improves downstream use of scientific PDFs.",
+    "block_id": "s003"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s004",
+   "claim": "segment s004: A three-page benchmark with a known ground truth is rendered from a controlled …",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 264,
+    "char_end": 459,
+    "quote": "A three-page benchmark with a known ground truth is rendered from a controlled layout engine, so that block order, header and footer positions, table cells and equation numbers are known exactly.",
+    "block_id": "s004"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s005",
+   "claim": "segment s005: A naive extractor recovers 71.4% of body characters in the correct position, wh…",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 460,
+    "char_end": 582,
+    "quote": "A naive extractor recovers 71.4% of body characters in the correct position, while a column-aware extractor reaches 98.1%.",
+    "block_id": "s005"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s006",
+   "claim": "segment s006: The gain is largest on pages whose columns are separated by a narrow gutter of …",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 583,
+    "char_end": 668,
+    "quote": "The gain is largest on pages whose columns are separated by a narrow gutter of 20 pt.",
+    "block_id": "s006"
+   },
+   "verified": true,
+   "note": "exact"
+  },
+  {
+   "id": "s007",
+   "claim": "segment s007: We conclude that reading order should be verified block by block rather than as…",
+   "anchor": {
+    "source": "inputs/abstract_en.md",
+    "char_start": 669,
+    "char_end": 802,
+    "quote": "We conclude that reading order should be verified block by block rather than asserted, and we release the benchmark and the verifier.",
+    "block_id": "s007"
+   },
+   "verified": true,
+   "note": "exact"
+  }
+ ],
+ "uncertainty": [],
+ "limits": [],
+ "audit": {
+  "checks": [
+   {
+    "id": "source-found",
+    "ok": true,
+    "detail": "1 candidate source file(s)",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "segments-built",
+    "ok": true,
+    "detail": "7 segments",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "all-segments-translated",
+    "ok": true,
+    "detail": "7 translated of 7 source segments (need 6)",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "numbers-preserved",
+    "ok": true,
+    "detail": "3 in, 3 out",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "units-preserved",
+    "ok": true,
+    "detail": "0 in, 0 out",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "citations-preserved",
+    "ok": true,
+    "detail": "0 in, 0 out",
+    "weight": 0.8,
+    "critical": false
+   },
+   {
+    "id": "no-untranslated-segment",
+    "ok": true,
+    "detail": "0 sentence(s) contain no target-language characters",
+    "weight": 1.0,
+    "critical": true
+   },
+   {
+    "id": "glossary-consistent",
+    "ok": true,
+    "detail": "10/10 terms used with the locked target",
+    "weight": 1.0,
+    "critical": false
+   },
+   {
+    "id": "glossary-applied",
+    "ok": true,
+    "detail": "10 of 10 terms occur in the source",
+    "weight": 0.6,
+    "critical": false
+   },
+   {
+    "id": "anchors-verified",
+    "ok": true,
+    "detail": "7/7 source segments re-slice",
+    "weight": 1.0,
+    "critical": true
+   }
+  ],
+  "passed": 10,
+  "total": 10,
+  "ratio": 1.0,
+  "failed_critical": []
+ },
+ "artifacts": [
+  {
+   "path": "inputs/abstract_en.md",
+   "kind": "data",
+   "exists": true,
+   "bytes": 803,
+   "sha256": "706249ea37051345f2e206de0c5efc3b617c37c5398d0821edba653360f8c704",
+   "note": "source text, copied verbatim"
+  },
+  {
+   "path": "inputs/translation_zh.md",
+   "kind": "data",
+   "exists": true,
+   "bytes": 668,
+   "sha256": "a3a6e447a14512a2e2150c5c6be31e76f61671aa090c1a5dae8668d655ff5f0c",
+   "note": "supplied translation, copied verbatim"
+  },
+  {
+   "path": "translation.md",
+   "kind": "data",
+   "exists": true,
+   "bytes": 13,
+   "sha256": "94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde",
+   "note": "the translated text, one paragraph per segment"
+  },
+  {
+   "path": "segments.json",
+   "kind": "data",
+   "exists": true,
+   "bytes": 3402,
+   "sha256": "2a17bee28f3b574052c3830d31643f4a24b31668e2f3b520e9f8f98966325650",
+   "note": "segment table with per-segment preservation"
+  }
+ ],
+ "contract": {
+  "declared_fields": [
+   "segments",
+   "translation",
+   "glossary",
+   "consistency",
+   "evidence"
+  ],
+  "fields": {
+   "segments": [
+    {
+     "id": "s001",
+     "source": "# Abstract",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "heading"
+    },
+    {
+     "id": "s002",
+     "source": "Two-column typesetting is the default for most engineering journals, yet the text layer of a PDF stores glyphs in the order the producer wrote them.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    },
+    {
+     "id": "s003",
+     "source": "We study whether layout-aware reading-order reconstruction improves downstream use of scientific PDFs.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    },
+    {
+     "id": "s004",
+     "source": "A three-page benchmark with a known ground truth is rendered from a controlled layout engine, so that block order, header and footer positions, table cells and equation numbers are known exactly.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    },
+    {
+     "id": "s005",
+     "source": "A naive extractor recovers 71.4% of body characters in the correct position, while a column-aware extractor reaches 98.1%.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    },
+    {
+     "id": "s006",
+     "source": "The gain is largest on pages whose columns are separated by a narrow gutter of 20 pt.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    },
+    {
+     "id": "s007",
+     "source": "We conclude that reading order should be verified block by block rather than asserted, and we release the benchmark and the verifier.",
+     "translation": null,
+     "preservation": {},
+     "aligned": false,
+     "status": "missing"
+    }
+   ],
+   "translation": "\n\n\n\n\n\n\n\n\n\n\n\n",
+   "glossary": [
+    {
+     "term": "reading order",
+     "target": "阅读顺序",
+     "source_occurrences": 2,
+     "target_occurrences": 2,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "two-column",
+     "target": "双栏",
+     "source_occurrences": 1,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "gutter",
+     "target": "栏间距",
+     "source_occurrences": 1,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "block",
+     "target": "块",
+     "source_occurrences": 3,
+     "target_occurrences": 2,
+     "expected_at_least": 2,
+     "consistent": true
+    },
+    {
+     "term": "ground truth",
+     "target": "真值",
+     "source_occurrences": 1,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "extractor",
+     "target": "抽取器",
+     "source_occurrences": 2,
+     "target_occurrences": 2,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "benchmark",
+     "target": "基准",
+     "source_occurrences": 2,
+     "target_occurrences": 2,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "verifier",
+     "target": "核验器",
+     "source_occurrences": 1,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "layout",
+     "target": "版面",
+     "source_occurrences": 2,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    },
+    {
+     "term": "glyph",
+     "target": "字形",
+     "source_occurrences": 1,
+     "target_occurrences": 1,
+     "expected_at_least": 1,
+     "consistent": true
+    }
+   ],
+   "consistency": {
+    "terms": 10,
+    "consistent": 10,
+    "violations": []
+   },
+   "evidence": [
+    {
+     "id": "s001",
+     "claim": "segment s001: # Abstract",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 0,
+      "char_end": 10,
+      "quote": "# Abstract",
+      "block_id": "s001"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s002",
+     "claim": "segment s002: Two-column typesetting is the default for most engineering journals, yet the te…",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 12,
+      "char_end": 160,
+      "quote": "Two-column typesetting is the default for most engineering journals, yet the text layer of a PDF stores glyphs in the order the producer wrote them.",
+      "block_id": "s002"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s003",
+     "claim": "segment s003: We study whether layout-aware reading-order reconstruction improves downstream …",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 161,
+      "char_end": 263,
+      "quote": "We study whether layout-aware reading-order reconstruction improves downstream use of scientific PDFs.",
+      "block_id": "s003"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s004",
+     "claim": "segment s004: A three-page benchmark with a known ground truth is rendered from a controlled …",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 264,
+      "char_end": 459,
+      "quote": "A three-page benchmark with a known ground truth is rendered from a controlled layout engine, so that block order, header and footer positions, table cells and equation numbers are known exactly.",
+      "block_id": "s004"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s005",
+     "claim": "segment s005: A naive extractor recovers 71.4% of body characters in the correct position, wh…",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 460,
+      "char_end": 582,
+      "quote": "A naive extractor recovers 71.4% of body characters in the correct position, while a column-aware extractor reaches 98.1%.",
+      "block_id": "s005"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s006",
+     "claim": "segment s006: The gain is largest on pages whose columns are separated by a narrow gutter of …",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 583,
+      "char_end": 668,
+      "quote": "The gain is largest on pages whose columns are separated by a narrow gutter of 20 pt.",
+      "block_id": "s006"
+     },
+     "verified": true,
+     "note": "exact"
+    },
+    {
+     "id": "s007",
+     "claim": "segment s007: We conclude that reading order should be verified block by block rather than as…",
+     "anchor": {
+      "source": "inputs/abstract_en.md",
+      "char_start": 669,
+      "char_end": 802,
+      "quote": "We conclude that reading order should be verified block by block rather than asserted, and we release the benchmark and the verifier.",
+      "block_id": "s007"
+     },
+     "verified": true,
+     "note": "exact"
+    }
+   ]
+  },
+  "unmapped": [],
+  "raw": {
+   "fields": [
+    "segments",
+    "translation",
+    "glossary",
+    "consistency",
+    "evidence"
+   ]
+  }
+ },
+ "run": {
+  "started_at": "2026-11-25T07:54:56Z",
+  "finished_at": "2026-11-25T07:54:56Z",
+  "argv": [
+   "scripts/run.py",
+   "--input",
+   "examples/case.json",
+   "--output",
+   "C:\\Users\\zcy\\WorkBuddy\\2026-11-25-15-07-35\\arena\\tasks\\reading-03-translate\\app_output"
+  ],
+  "python": "3.13.14",
+  "cwd": "C:\\Users\\zcy\\WorkBuddy\\2026-11-25-15-07-35\\arena\\tasks\\reading-03-translate",
+  "glossary_terms": 10,
+  "mode": "supplied",
+  "case_notes": []
+ }
+}

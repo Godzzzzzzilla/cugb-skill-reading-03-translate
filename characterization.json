@@ -1,0 +1,52 @@
+{
+ "deviations_from_paper": [
+  {
+   "target": "evidence anchors re-slice exactly",
+   "metric": "custom",
+   "reference_value": 1.0,
+   "actual_value": 1.0,
+   "score": 1.0,
+   "tolerance": 0.0,
+   "verifier_script": "scripts/verify.py",
+   "evidence_artifact": "result",
+   "explanation": "Every evidence item is a character range into an emitted text file; verify.py re-slices it and recomputes the share that still matches."
+  }
+ ],
+ "envelope": [
+  {
+   "condition": "English source plus a glossary and a supplied translation",
+   "status": "in envelope",
+   "note": "10/10 terms locked, 3/3 numbers preserved on the demo"
+  },
+  {
+   "condition": "source plus glossary, no translation",
+   "status": "draft",
+   "note": "glossary-substituted draft, labelled as a draft, not presented as a translation"
+  },
+  {
+   "condition": "sentence counts differ between languages",
+   "status": "in envelope",
+   "note": "preservation is checked at document level; segment pairing only when counts match"
+  }
+ ],
+ "failure_modes": [
+  {
+   "mode": "translation drops a sentence",
+   "impact": "segment count falls below 80% of source, or a number disappears from the document"
+  },
+  {
+   "mode": "decimal or range altered",
+   "impact": "numbers-preserved fails and the missing token is named"
+  },
+  {
+   "mode": "term paraphrased instead of locked",
+   "impact": "that term's target count falls under the expected floor"
+  },
+  {
+   "mode": "untranslated sentence left in the source language",
+   "impact": "no-untranslated-segment fails"
+  }
+ ],
+ "sensitivity": [],
+ "note": "This is a skill-authoring challenge: the targets are the demonstration benchmark and the audit, not a paper's reported numbers."
+}
